@@ -1,0 +1,137 @@
+/* 275x420 */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    background: url(../image/pattern-background-desktop.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 45rem;
+    height: 65rem;
+    align-items: stretch;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+
+.conteudo {
+    padding-top: 40px;
+}
+
+.container .ilustracao {
+    border-radius: 20px 20px 0 0;
+}
+
+.conteudo .titulo {
+    color: hsl(223, 49%, 21%);
+    font-weight: 900;
+}
+
+.conteudo .descricao {
+    margin: 20px 50px 20px 50px;
+    line-height: 25px;
+    color: hsl(228, 14%, 51%);
+}
+
+.conteudo .recomendacao {
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px 0 40px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.recomendacao .plano {
+    width: 80%;
+}
+
+.recomendacao .nome {
+    color: hsl(223, 49%, 21%);
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+.recomendacao .valor {
+    color: hsl(228, 14%, 51%);
+}
+
+.recomendacao .botao {
+    width: 100%;
+    text-align: right;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.recomendacao .botao a {
+    color: hsl(245, 75%, 52%);
+}
+
+.recomendacao .botao:hover {
+    opacity: 0.5;
+}
+
+.recomendacao .icone {
+    margin-right: 20px;
+}
+
+.conteudo .processo {
+    margin: 20px 40px 10px 40px;
+    padding: 15px 40px 15px 40px;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    box-shadow: 10px 15px 15px #dcd9f8;
+}
+
+.conteudo .processo a {
+    color: #fff;
+}
+
+.conteudo .processo:hover {
+    opacity: 0.5;
+}
+
+.conteudo .cancelar {
+    font-weight: 800;
+}
+
+.conteudo .cancelar a {
+    color: hsl(228, 14%, 51%);
+}
+
+.conteudo .cancelar a:hover {
+    color: hsl(223, 49%, 21%);
+}
+
+@media(max-width:767px) {
+    .container {
+        margin: 20px;
+    }
+
+    .recomendacao .plano .nome {
+        font-size: 15px;
+    }
+
+    .recomendacao .botao {
+        font-size: 12px;
+    }
+}
